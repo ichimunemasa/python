@@ -3,19 +3,23 @@ import similarity as sim
 
 if __name__=="__main__":
 
-
-	dictionary01 = {
+	
+	#辞書
+	dictionary = {
 	"A":{"apple":2.5,"mikan":2.5,"banana":5.0,"melon":2.0},
 	"B":{"apple":2.5,"banana":1.5,"kiui":3.0,"melon":4.0}
 	}
 
-	value = sim.euclidean(dictionary00,"Lisa Rose","Gene Seymour")
+	#ユークリッド距離
+	value = sim.euclidean(dictionary,"A","B")
 	print str(value)
 	
-	value = sim.pearson(dictionary00,"Lisa Rose","Gene Seymour")
+	#ピアソン相関
+	value = sim.pearson(dictionary,"A","B")
 	print str(value)
-
-	value = sim.cosine(dictionary01,"A","B")
+	
+	#コサイン類似度
+	value = sim.cosine(dictionary,"A","B")
 	print str(value)
 
 
