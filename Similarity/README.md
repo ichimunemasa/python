@@ -1,6 +1,7 @@
 #Similarity
 * 辞書形式行列の行間類似度を算出する
 
+
 ##euclidean(matrix,row1,row2)
 * ユークリッド距離の算出を行う
 * 辞書形式の行列(matrix),行列の行2つを引数とする
