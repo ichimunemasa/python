@@ -58,8 +58,8 @@
 	def cosine(matrix,row1,row2):
 		numer = sum(matrix[row1][column] * matrix[row2][column] for column in matrix[row1] if column in matrix[row2])
 		denom = sqrt(sum(matrix[row1][column]**2 for column in matrix[row1]) * sum(matrix[row2][column]**2 for column in matrix[row2]))
-
+		
 		if denom == 0: return 0
-
+	
 		return numer/denom
 
